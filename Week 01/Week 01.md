@@ -1,4 +1,4 @@
-**Week 01: Project Planning & Setup**
+## **Week 01: Project Planning & Setup**
 
 1. **Defining the Project Scope:**
 
