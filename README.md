@@ -46,31 +46,31 @@ The project is divided into weekly tasks to ensure gradual and systematic progre
 ## Usage
 
 ### Prerequisites
-- **C++ Compiler:** Ensure a modern C++ compiler is installed.
-- **CMake:** Build and manage the project.
+- **Python Interpreter:** Ensure Python 3.x is installed on your system.
+- **pip:** Python's package manager for installing dependencies.
 - **Git:** Version control for collaborative development.
 
 ### Setup
 1. Clone the repository:
    ```bash
    git clone https://github.com/Aqib2607/Virtual_CPU_Emulator.git
-   cd Virtual_CPU_Emulator
+   cd your-python-project
+
    ```
-2. Build the project:
+2. Set up the virtual environment:
    ```bash
-   mkdir build && cd build
-   cmake ..
-   make
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
-3. Run the emulator:
+3. Install the required Python packages:
    ```bash
-   ./Virtual_CPU_Emulator
+   pip install -r requirements.txt
    ```
 
 ### Assembler Usage
-To assemble a program:
+To run the assembler:
 ```bash
-./Assembler input.asm output.bin
+python assembler.py input.asm output.bin
 ```
 
 ## Collaboration
