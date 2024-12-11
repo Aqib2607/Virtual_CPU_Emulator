@@ -76,24 +76,6 @@ To assemble a program:
 ./Assembler input.asm output.bin
 ```
 
-## Project Structure
-```
-Project-vCPU-main
-├── .vscode/              # IDE configuration files
-├── CMakeLists.txt        # Build configuration
-├── README.md             # Project documentation
-├── Week 1/               # Week 1 tasks
-├── Week 2/               # Week 2 tasks, including assembler
-├── Week 3/               # Week 3 tasks, including register module
-├── Week 4/               # Week 4 tasks, including fetch module
-├── Week 5/               # Week 5 tasks, including memory management
-├── Week 6/               # Week 6 tasks, final integration
-├── build/                # Build artifacts
-├── cpu-z-svgrepo-com.svg # CPU illustration
-├── main.cpp              # Main source file
-└── main                  # Compiled binary
-```
-
 ## Collaboration
 Our team uses GitHub for version control and progress tracking. Contributions are welcome!
 
