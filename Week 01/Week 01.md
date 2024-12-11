@@ -1,6 +1,6 @@
-###Project Name: Build a Virtual CPU Emulator
+# Week 1: Project Planning & Setup
 
-1.	Defining the Project Scope: 
+1.	**Defining the Project Scope**: 
 To start, we met as a team to determine the exact scope of our emulator. Our goal is to create a virtual CPU that can mimic the basic operations of a physical CPU. Here’s what we defined:
 •	Core Operations: Our emulator will handle essential arithmetic and logic functions, such as ADD, SUBTRACT, and logical comparisons.
 •	Memory Management: We aim to include basic memory handling capabilities, like reading and writing data, to simulate a CPU’s interaction with memory.
