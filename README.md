@@ -31,7 +31,7 @@ The project is divided into weekly tasks to ensure gradual and systematic progre
 - Setting up the project environment.
 - Writing initial documentation and creating project scaffolding.
 
-### Week 2
+### [Week 2: Instruction Set Architecture (ISA)](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2002/Week%2002.md)
 - Developing the assembler to translate assembly language instructions into machine code.
 
 ### Week 3
