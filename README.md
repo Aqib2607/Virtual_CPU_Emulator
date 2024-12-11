@@ -34,7 +34,7 @@ The project is divided into weekly tasks to ensure gradual and systematic progre
 ### [Week 2: Instruction Set Architecture (ISA)](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2002/Week%2002.md)
 - Developing the assembler to translate assembly language instructions into machine code.
 
-### Week 3
+### [Week 3: Basic CPU Components](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2003/Week%2003.md)
 - Implementing the register module for storing temporary data during execution.
 
 ### Week 4
