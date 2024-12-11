@@ -40,11 +40,8 @@ The project is divided into weekly tasks to ensure gradual and systematic progre
 ### [Week 4: Instruction Execution](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2004/Week%2004.md)
 - Building the fetch mechanism to retrieve instructions from memory.
 
-### Week 5
+### [Week 5: Memory Management](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2005/Week%2005.md)
 - Implementing memory management and testing data read/write operations.
-
-### Week 6
-- Integrating all components and testing the overall emulator functionality.
 
 ## Usage
 
