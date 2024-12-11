@@ -27,7 +27,7 @@ This project implements a **Virtual CPU Emulator** to simulate essential CPU com
 ## Development Plan
 The project is divided into weekly tasks to ensure gradual and systematic progress:
 
-### [Week 1: Project Planning & Setup] (https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2001/Week%2001.md)
+### [Week 1: Project Planning & Setup](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2001/Week%2001.md)
 - Setting up the project environment.
 - Writing initial documentation and creating project scaffolding.
 
