@@ -54,7 +54,7 @@ The project is divided into weekly tasks to ensure gradual and systematic progre
 1. Clone the repository:
    ```bash
    git clone https://github.com/Aqib2607/Virtual_CPU_Emulator.git
-   cd your-python-project
+   cd Virtual_CPU_Emulator
 
    ```
 2. Set up the virtual environment:
