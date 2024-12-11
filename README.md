@@ -10,10 +10,19 @@ This project implements a **Virtual CPU Emulator** to simulate essential CPU com
 - **I/O Operations:** Includes basic input and output mechanisms.
 - **Testing Environment:** Supports testing assembly programs within the emulator.
 
-## Group Members 👥
+## Group Members
 - Member 1: [Aqib Jawwad Nahin **ID: 11220320969**](mailto:aqibjawwad2607@gmail.com)
 - Member 2: [Mst. Suraia Akter **ID: 11220320951**](mailto:aktersuraia123@gmail.com)
 - Member 3: [MD Robayet Hassan Rupom **ID: 11220320979**](mailto:rupomhossain58@gmail.com)
+
+## Course Details
+- **Course Name:** Computer Architecture 
+- **Course Code:** 3101 
+- **Section:** 5D 
+- **Department:** Computer Science & Engineering 
+- **Instructor:** Vashkar Kar  (Lecturer)
+- **Institute:** Northern University of Business & Technology Khulna
+- **Website:** www.nubtkhulna.ac.bd
 
 ## Development Plan
 The project is divided into weekly tasks to ensure gradual and systematic progress:
