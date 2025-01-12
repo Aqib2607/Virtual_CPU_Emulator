@@ -43,6 +43,8 @@ The project is divided into weekly tasks to ensure gradual and systematic progre
 ### [Week 5: Memory Management](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2005/Week%2005.md)
 - Implementing memory management and testing data read/write operations.
 
+### [Week 6: I/O Operations]
+
 ## Usage
 
 ### Prerequisites
