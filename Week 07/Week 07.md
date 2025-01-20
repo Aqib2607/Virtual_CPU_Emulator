@@ -78,3 +78,4 @@ Enhance the Virtual CPU Emulator by introducing advanced features:
 - R3: 20
 
 **Interrupt Message**:
+`End of program`
