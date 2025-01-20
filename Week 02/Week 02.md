@@ -1,4 +1,4 @@
-## **Week 2: C++ Program for Assembling and Converting Assembly Code to Machine Code** 
+## **Week 2: Assembling and Converting Assembly Code to Machine Code** 
 
 1. **Defining Basic Instructions** 
 
