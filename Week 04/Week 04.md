@@ -1,75 +1,76 @@
-## **Week 04: Instruction Execution**
+# Week 04: Instruction Execution
 
-This documentation outlines the development and implementation of the **Fetch-Decode-Execute Cycle** using Python for a basic CPU simulation. The goal of Week 4 was to create a simplified CPU model capable of executing basic instructions through a structured cycle.
+This documentation outlines the development and implementation of the Fetch-Decode-Execute Cycle using Python for a basic CPU simulation. The goal of Week 4 was to create a simplified CPU model capable of executing basic instructions through a structured cycle.
 
-**Objective**
+## Objective
 
 - Develop a basic CPU model that can fetch instructions from memory, decode them, and execute using an ALU and registers.
 - Test the cycle with a set of sample instructions to ensure correct operation.
 
-**Fetch-Decode-Execute Cycle: Overview**
+## Fetch-Decode-Execute Cycle: Overview
 
 The cycle is divided into three main stages:
 
 1. **Fetch**: Retrieve the next instruction from memory.
-1. **Decode**: Break down the instruction into its components (opcode and operands).
-1. **Execute**: Perform the operation using the ALU and registers.
+2. **Decode**: Break down the instruction into its components (opcode and operands).
+3. **Execute**: Perform the operation using the ALU and registers.
 
-**Algorithm for Instruction Execution**
+## Algorithm for Instruction Execution
 
 **Step 1: Initialization**
 
-1. Create a **memory** list containing a set of instructions.
-1. Initialize the **Program Counter (PC)** to 0.
-1. Create a **register file** (e.g., R1, R2) and set initial values to 0.
-1. Instantiate the ALU (Arithmetic Logic Unit) for performing operations.
+1. Create a memory list containing a set of instructions.
+2. Initialize the Program Counter (PC) to 0.
+3. Create a register file (e.g., R1, R2) and set initial values to 0.
+4. Instantiate the ALU (Arithmetic Logic Unit) for performing operations.
 
 **Step 2: Fetch Stage**
 
 1. Retrieve the instruction from memory at the address pointed to by the PC.
-1. Store the fetched instruction in the **Instruction Register (IR)**.
-1. Increment the PC to point to the next instruction.
+2. Store the fetched instruction in the Instruction Register (IR).
 
 **Step 3: Decode Stage**
 
-1. Split the fetched instruction into: 
-   1. **Opcode**: Specifies the operation (e.g., LOAD, ADD, STORE).
-   1. **Operands**: Specifies registers and/or immediate values.
-1. Identify the type of operation (e.g., arithmetic, load, store).
+1. Parse the opcode and operands from the IR.
+2. Identify the operation to be performed and the involved registers or immediate values.
 
 **Step 4: Execute Stage**
 
-1. Based on the opcode, perform the following operations:
-   1. **LOAD**: Move an immediate value into a register.
-   1. **ADD**: Add values from two registers and store the result in a target register.
-   1. **STORE**: Output the value of a register to a memory location.
-1. Update the register file with the result or print output for a store operation.
+1. Perform the operation specified by the opcode using the ALU.
+2. Update the destination register with the result.
+3. Increment the PC to point to the next instruction.
 
-**Complete Algorithm**
+**Step 5: Repeat**
 
-1\. Initialize memory with a list of instructions.
+1. Continue the cycle until a halt instruction is encountered or the end of the instruction list is reached.
 
-2\. Set Program Counter (PC) to 0.
+## Sample Instructions and Execution
 
-3\. Initialize registers R1 and R2 to 0.
+Consider the following set of instructions:
 
-4\. Repeat until all instructions are executed:
+1. `LOAD R1, 5`  — Load the immediate value 5 into register R1.
+2. `ADD R1, R2`  — Add the value of R2 to R1 and store the result in R1.
+3. `SUB R1, 2`   — Subtract the immediate value 2 from R1.
+4. `STORE R1, 100` — Store the value of R1 into memory address 100.
 
-`    `a. Fetch the instruction at memory[PC].
+**Execution Steps:**
 
-`    `b. Increment PC.
+- **Fetch**: Retrieve `LOAD R1, 5` from memory.
+- **Decode**: Identify the opcode `LOAD` and operands `R1` and `5`.
+- **Execute**: Load the value 5 into register R1.
 
-`    `c. Decode the instructions to extract opcode and operands.
+- **Fetch**: Retrieve `ADD R1, R2` from memory.
+- **Decode**: Identify the opcode `ADD` and operands `R1` and `R2`.
+- **Execute**: Add the value of R2 to R1 and store the result in R1.
 
-`    `d. Perform the operation based on the opcode:
+- **Fetch**: Retrieve `SUB R1, 2` from memory.
+- **Decode**: Identify the opcode `SUB` and operands `R1` and `2`.
+- **Execute**: Subtract 2 from R1.
 
-`        `i.  If LOAD, move the value to the specified register.
+- **Fetch**: Retrieve `STORE R1, 100` from memory.
+- **Decode**: Identify the opcode `STORE`, operand `R1`, and address `100`.
+- **Execute**: Store the value of R1 into memory address 100.
 
-`        `ii. If ADD, add values from two registers and update the target register.
+## Conclusion
 
-`        `iii. If STORE, output the result.
-
-**Conclusion**
-
-The Fetch-Decode-Execute cycle was successfully implemented in Python. The project demonstrated how a basic CPU processes instructions sequentially, decodes them, and executes arithmetic or memory operations. This simulation helped reinforce concepts of CPU operations and data handling through a structured approach.
-
+By following this structured Fetch-Decode-Execute cycle, the CPU model can effectively process a sequence of instructions, demonstrating fundamental CPU operations in a simulated environment.
