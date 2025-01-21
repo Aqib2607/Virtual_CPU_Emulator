@@ -1,4 +1,4 @@
-# File 02: Assembler
+# Week 02: Assembler
 OPCODES = {
     'ADD': 0x01,
     'SUB': 0x02,
@@ -34,7 +34,7 @@ def assemble_instruction(instruction):
     else:
         raise ValueError("Unsupported instruction format.")
 
-# File 03: CPU and ALU Simulation
+# Week 03: CPU and ALU Simulation
 class ALU:
     def __init__(self):
         pass
@@ -120,12 +120,12 @@ class CPU:
 # Predefined inputs and execution
 cpu = CPU()
 
-# Initializing registers with values (from File 03)
+# Initializing registers with values (from Week 03)
 cpu.registers.write(0, 5)  # R0 = 5
 cpu.registers.write(1, 3)  # R1 = 3
 cpu.registers.write(2, 7)  # R2 = 7
 
-# Assembly instructions (from File 02)
+# Assembly instructions (from Week 02)
 assembly_code = [
     "ADD 3 0 1",  # Add R0 and R1, store in R3
     "SUB 2 2 1",  # Subtract R1 from R2, store in R2
@@ -135,23 +135,23 @@ assembly_code = [
 ]
 
 # Convert assembly to machine code
-print("\n[Attachment: File 02 - Machine Code]")
+print("\n[Week 02 - Machine Code]")
 machine_code = [assemble_instruction(instr) for instr in assembly_code]
 print("\n".join(machine_code))
 
 # Execute instructions
-print("\n[Attachment: File 03 - Instruction Execution]")
+print("\n[Week 03 - Instruction Execution]")
 for instruction in assembly_code:
     cpu.load_instruction(instruction)
     cpu.execute_instruction()
 
 # Display final register states
-print("\n[Attachment: File 03 - Final Register States]")
+print("\n[Week 03 - Final Register States]")
 for i in range(4):
     value = cpu.registers.read(i)
     print(f"R{i}: {bin(value & 0xFFFFFFFF)[2:]}")
 
-# File 04: Memory and Program Execution
+# Week 04: Memory and Program Execution
 
 def add(op1, op2):
     return op1 + op2
@@ -192,7 +192,7 @@ def execute_program(program):
     return memory, registers
 
 def display_memory(memory):
-    print("\n[Attachment: File 04 - Final Memory State (Binary)]")
+    print("\n[Week 04 - Final Memory State (Binary)]")
     for addr, val in enumerate(memory):
         if isinstance(val, int):  # Ensure the value is an integer
             print(f"Memory[{addr}] = {bin(val)}")
@@ -200,7 +200,7 @@ def display_memory(memory):
             print(f"Memory[{addr}] contains non-integer data: {val}")
 
 def display_registers(registers):
-    print("\n[Attachment: File 04 - Final Register State (Binary)]")
+    print("\n[Week 04 - Final Register State (Binary)]")
     for reg, val in enumerate(registers):
         print(f"R{reg} = {bin(val)}")
 
