@@ -121,13 +121,11 @@ class CPU:
 cpu = CPU()
 
 # Initializing registers with values (from File 03)
-print("\n[Week 03 - Register Initialization]")
 cpu.registers.write(0, 5)  # R0 = 5
 cpu.registers.write(1, 3)  # R1 = 3
 cpu.registers.write(2, 7)  # R2 = 7
 
 # Assembly instructions (from File 02)
-print("\n[Week 02 - Assembly Instructions]")
 assembly_code = [
     "ADD 3 0 1",  # Add R0 and R1, store in R3
     "SUB 2 2 1",  # Subtract R1 from R2, store in R2
