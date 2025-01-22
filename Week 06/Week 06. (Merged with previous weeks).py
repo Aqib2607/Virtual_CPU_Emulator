@@ -226,6 +226,8 @@ final_memory, final_registers = execute_program(user_program)
 display_memory(final_memory)
 display_registers(final_registers)
 
+
+#Week 05: Virtual Memory Simulation
 print("\n[Week 05 - Virtual Memory Simulation]")
 class VirtualMemory:
     def __init__(self, total_size, segment_sizes):
@@ -292,6 +294,8 @@ def main_week_05():
 
 main_week_05()
 
+
+#Week 06: Simulated CPU with I/O
 print("\n[Week 06 - Simulated CPU with I/O]")
 class SimulatedCPU:
     def __init__(self):
