@@ -46,6 +46,9 @@ The project is divided into weekly tasks to ensure gradual and systematic progre
 ### [Week 6: I/O Operations](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2006/Week%2006.md)
 - Implementation of basic input/output operations by integrating simulated devices (keyboard and display) with the Virtual CPU Emulator.
 
+### [Week 7: Advanced Features]
+- Allow the CPU to change the execution flow based on conditions or jump to specific memory addresses.
+
 ## Usage
 
 ### Prerequisites
