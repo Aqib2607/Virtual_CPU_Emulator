@@ -79,20 +79,6 @@ instructions = [
 ]
 ```
 
-### Results
-
-#### Profiling Output for Original Emulator:
-```
-Profiling Original Emulator:
-... (profiling stats here)
-```
-
-#### Profiling Output for Optimized Emulator:
-```
-Profiling Optimized Emulator:
-... (profiling stats here)
-```
-
 #### Outputs:
 - **Original Emulator Output (Binary):**
   ```
