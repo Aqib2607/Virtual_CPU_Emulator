@@ -49,6 +49,9 @@ The project is divided into weekly tasks to ensure gradual and systematic progre
 ### [Week 7: Advanced Features](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2007/Week%2007.md)
 - Allow the CPU to change the execution flow based on conditions or jump to specific memory addresses.
 
+### [Week 8: Profiling and Optimized Instruction Decoder](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2008/Week%2008.md)
+- Optimize the Virtual CPU Emulator's performance by profiling and caching frequently used operations.
+
 ## Usage
 
 ### Prerequisites
