@@ -55,6 +55,9 @@ The project is divided into weekly tasks to ensure gradual and systematic progre
 ### [Week 9: Final Testing & Debugging](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2009/Week%2009.md)
 - Ensuring the virtual CPU emulator is thoroughly tested, debugged, and validated for accuracy and performance before moving to documentation and presentation.
 
+### [Final Report](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Final%20Report/Final%20Document.md)
+- A Python-based simulation of a simple CPU with fetch-decode-execute functionality.
+
 ## Usage
 
 ### Prerequisites
