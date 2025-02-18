@@ -52,6 +52,9 @@ The project is divided into weekly tasks to ensure gradual and systematic progre
 ### [Week 8: Profiling and Optimized Instruction Decoder](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2008/Week%2008.md)
 - Optimize the Virtual CPU Emulator's performance by profiling and caching frequently used operations.
 
+### [Week 9: Final Testing & Debugging](https://github.com/Aqib2607/Virtual_CPU_Emulator/blob/main/Week%2009/Week%2009.md)
+- Ensuring the virtual CPU emulator is thoroughly tested, debugged, and validated for accuracy and performance before moving to documentation and presentation.
+
 ## Usage
 
 ### Prerequisites
