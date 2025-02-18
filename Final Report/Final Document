@@ -31,25 +31,25 @@ Design the instruction set for the virtual CPU.
 
 Each instruction is 8 bits:
 
-- *First 4 bits (opcode):* Operation code (e.g., 1 for LOAD, 2 for ADD).
-- *Last 4 bits (operand):* Data or memory location the instruction operates on.
+- **First 4 bits (opcode):** Operation code (e.g., 1 for LOAD, 2 for ADD).
+- **Last 4 bits (operand):** Data or memory location the instruction operates on.
 
 ### *Sample Instructions (Decimal Input and Binary Output):*
 
-- *1 (LOAD):* Load immediate value 5 into Register R0.  
-  *Binary Output:* 00000001 00000101  
+- **1 (LOAD):** Load immediate value 5 into Register R0.  
+  **Binary Output:** `00000001 00000101`  
   Explanation: Opcode 1 (LOAD) and Operand 5 (immediate value).
 
-- *2 (ADD):* Add immediate value 3 to the contents of R0.  
-  *Binary Output:* 00000010 00000011  
+- **2 (ADD):** Add immediate value 3 to the contents of R0.  
+  **Binary Output:** `00000010 00000011`  
   Explanation: Opcode 2 (ADD) and Operand 3 (immediate value).
 
-- *64 (OUTPUT):* Output the value in R0.  
-  *Binary Output:* 01000000 00000000  
+- **64 (OUTPUT):** Output the value in R0.  
+  **Binary Output:** `01000000 00000000`  
   Explanation: Opcode 64 (OUTPUT) with no operand.
 
-- *240 (HALT):* Stop the program execution.  
-  *Binary Output:* 11110000 00000000  
+- **240 (HALT):** Stop the program execution.  
+  **Binary Output:** `11110000 00000000`  
   Explanation: Opcode 240 (HALT) with no operand.
 
 ### *Algorithm:*
@@ -66,10 +66,10 @@ Implement the core components of the CPU.
 
 ### *Core Components:*
 
-- *ALU (Arithmetic Logic Unit):* Handles arithmetic and logical operations.
-- *Registers:* Small memory locations for temporary data storage.
-- *Program Counter (PC):* Holds the address of the next instruction.
-- *Instruction Register (IR):* Stores the instruction currently being executed.
+- **ALU (Arithmetic Logic Unit):** Handles arithmetic and logical operations.
+- **Registers:** Small memory locations for temporary data storage.
+- **Program Counter (PC):** Holds the address of the next instruction.
+- **Instruction Register (IR):** Stores the instruction currently being executed.
 
 ### *Algorithm:*
 
@@ -86,14 +86,14 @@ Implement the fetch-decode-execute cycle.
 
 ### *Fetch-Decode-Execute Algorithm:*
 
-1. *Fetch:*
+1. **Fetch:**
    - Retrieve the instruction from memory at the address held by the PC.
    - Increment the PC to point to the next instruction.
 
-2. *Decode:*
+2. **Decode:**
    - Extract the opcode and operand from the fetched instruction.
 
-3. *Execute:*
+3. **Execute:**
    - Perform the operation using the ALU and registers based on the opcode.
    - Handle any memory access or output as required.
 
@@ -108,8 +108,8 @@ Set up memory and handle read/write operations.
 
 - Initialize a simulated memory space (e.g., a list of 256 bytes).
 - Implement memory read/write functions:
-  - *Read:* Retrieve data from a specific memory address.
-  - *Write:* Store data at a specific memory address.
+  - **Read:** Retrieve data from a specific memory address.
+  - **Write:** Store data at a specific memory address.
 - Handle address mapping and memory segmentation for instructions, data, and I/O.
 
 ---
@@ -121,13 +121,13 @@ Add input/output functionality to the virtual CPU.
 
 ### *I/O Algorithm:*
 
-- *Simulated Input:* Store user input in a buffer accessible by the CPU.
-- *Simulated Output:* Output the value in a register to a display buffer.
+- **Simulated Input:** Store user input in a buffer accessible by the CPU.
+- **Simulated Output:** Output the value in a register to a display buffer.
 
 ### *I/O Instructions:*
 
-- *INPUT:* Load user input into a register.
-- *OUTPUT:* Display the value in a register.
+- **INPUT:** Load user input into a register.
+- **OUTPUT:** Display the value in a register.
 
 ---
 
@@ -138,13 +138,13 @@ Add control flow, subroutines, and interrupts to the virtual CPU.
 
 ### *Control Flow Algorithm:*
 
-- *Branching Instructions:*
-  - *JUMP:* Change the PC to a new instruction address.
-  - *Conditional Branching (e.g., IF ZERO):* Jump only if a condition is met.
-- *Subroutines:*
+- **Branching Instructions:**
+  - **JUMP:** Change the PC to a new instruction address.
+  - **Conditional Branching (e.g., IF ZERO):** Jump only if a condition is met.
+- **Subroutines:**
   - Save the return address before jumping to a subroutine.
   - Use a RETURN instruction to restore the saved address.
-- *Interrupts:*
+- **Interrupts:**
   - Allow external events to pause execution and jump to an interrupt handler.
 
 ---
@@ -156,9 +156,9 @@ Improve the emulator’s performance.
 
 ### *Optimization Algorithm:*
 
-- *Profiling:* Use Python’s built-in profiling tools to identify slow parts of the code.
-- *Optimize Critical Paths:* Rewrite slow functions (e.g., ALU operations and memory access) for better efficiency.
-- *Assembler Enhancements:* Improve instruction encoding for faster instruction parsing and execution.
+- **Profiling:** Use Python’s built-in profiling tools to identify slow parts of the code.
+- **Optimize Critical Paths:** Rewrite slow functions (e.g., ALU operations and memory access) for better efficiency.
+- **Assembler Enhancements:** Improve instruction encoding for faster instruction parsing and execution.
 
 ---
 
@@ -182,10 +182,10 @@ Prepare documentation and presentation materials for the project.
 
 ### *Tasks:*
 
-- *Documentation:*
+- **Documentation:**
   - Write comprehensive documentation covering the emulator’s design, instruction set, and usage.
   - Prepare a project report detailing objectives, design decisions, challenges, and solutions.
-- *Presentation:*
+- **Presentation:**
   - Create presentation slides and a demo to showcase the emulator’s features.
 
 ---
